@@ -1,0 +1,143 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: auto;
+    background-color: #f4f4f4;
+
+    /* font-family: Arial, sans-serif; */
+   
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+}
+
+.header {
+    background-color: #f7a500;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.students-section {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.students-section a{
+    text-decoration: none;
+}
+/* 
+.students-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+} */
+
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 150px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-image {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    float: left;
+    border: .5px solid black;
+}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.product-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    /* align-items: center; */
+    margin-left: 130px;
+    /* direction: rtl; Right to left, so highest rating comes first */
+}
+
+.star {
+    font-size: 25px;
+    color: #ccc;
+}
+
+/* Set default rating to 4 stars */
+.star:nth-child(-n+4) {
+    color: green;
+}
+
+#rating-value {
+    /* margin-top: 20px; */
+    font-size: 15px;
+    color: #333;
+    margin: 6px;
+}
+
+
+
+
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    /* margin: 0; */
+}
+
+.mrp {
+    font-size: 14px;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.price, .mrp {
+    display: inline-block;
+    margin: 0 2PX;
+
+}
+
+
+/* Footer CSS */
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding top and bottom */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+.foot-p {
+    margin: 0; /* Remove default margins */
+    font-size: 14px; /* Text size */
+  }
+  
