@@ -1,0 +1,92 @@
+
+.product-card {
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 150px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    white-space: normal;
+    /* inset: white; */
+
+}
+
+.product-image {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    float: left;
+    border: .5px solid black;
+}
+
+.product-info {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.product-title {
+    overflow-wrap: break-word;
+    font-size: 18px;
+    color: black;
+    padding: auto;
+    margin: auto;
+    
+
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.rating {
+    display: flex;
+    /* align-items: center; */
+    margin-left: 130px;
+    /* direction: rtl; Right to left, so highest rating comes first */
+}
+
+.star {
+    font-size: 25px;
+    color: #ccc;
+}
+
+/* Set default rating to 4 stars */
+.star:nth-child(-n+4) {
+    color: green;
+}
+
+#rating-value {
+    /* margin-top: 20px; */
+    font-size: 15px;
+    color:black;
+    margin: 6px;
+}
+
+
+
+
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    /* margin: 0; */
+}
+
+.mrp {
+    font-size: 14px;
+    color: black;
+    text-decoration: line-through;
+}
+
+.price, .mrp {
+    display: inline-block;
+    margin: 0 2PX;
+
+}

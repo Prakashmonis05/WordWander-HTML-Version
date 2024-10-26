@@ -21,4 +21,4 @@ function login() {
 }
 
 // Add event listener to the button
-document.getElementById("loginBtn").addEventListener("click", login);
+document.getElementById("btn").addEventListener("click", login);
