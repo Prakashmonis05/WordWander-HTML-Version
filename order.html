@@ -42,14 +42,6 @@ label {
     font-weight: bold;
 }
 
-input[type="text"], input[type="tel"], select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
 button {
     width: 100%;
     padding: 10px;
@@ -66,226 +58,60 @@ button:hover {
     background-color: orange;
 }
 
+.input_box{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
 
-
-
-
-
-
-
-.x-box {
-    text-align: center;
-  }
-  
-  #orderButton {
-    padding: 12px 24px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  #orderButton:hover {
-    background-color: #218838;
-  }
-  
-  .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-content {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    width: 300px;
-    animation: popupFadeIn 0.6s ease-out;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .checkmark {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 20px;
-  }
-  
-  .check-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #4CAF50;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: circleGlow 1.2s ease forwards;
-    box-shadow: 0px 0px 15px rgba(76, 175, 80, 0.6);
-  }
-  
-  .check-stem {
-    width: 6px;
-    height: 35px;
-    background-color: white;
-    position: absolute;
-    top: 25px;
-    left: 35px;
-    transform: rotate(45deg);
-    animation: stemGrow 0.3s ease forwards 0.6s;
-  }
-  
-  .check-kick {
-    width: 6px;
-    height: 18px;
-    background-color: white;
-    position: absolute;
-    top: 45px;
-    left: 46px;
-    transform: rotate(-45deg);
-    animation: kickGrow 0.3s ease forwards 0.6s;
-  }
-  
-  .order-text {
-    font-size: 24px;
-    color: #333;
-    opacity: 0;
-    animation: textSlideUp 0.4s ease-out forwards 0.9s;
-  }
-  
-  @keyframes stemGrow {
-    from {
-      height: 0;
-    }
-    to {
-      height: 35px;
-    }
-  }
-  
-  @keyframes kickGrow {
-    from {
-      height: 0;
-    }
-    to {
-      height: 18px;
-    }
-  }
-  
-  @keyframes circleGlow {
-    0% {
-      transform: scale(0.6);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes popupFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes textSlideUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
 
      </style>
 </head>
 <body>
     <div class="container">
         <h2>Shipping Details</h2>
-        <form action="/submit-shipping-details" method="POST" id="myForm">
+        <form action="confirm.html" method="POST" id="myForm">
             <div class="form-group">
                 <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+                <input class="input_box" type="text" id="fullName" name="fullName" required>
             </div>
 
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input class="input_box" type="number" id="phone" name="phone" required>
             </div>
 
             <div class="form-group">
                 <label for="zip">Pin-Code:</label>
-                <input type="text" id="zip" name="zip" required>
+                <input class="input_box" type="number" id="zip" name="zip" required>
             </div>
 
             <div class="form-group">
                 <label for="state">State:</label>
-                <input type="text" id="state" name="state" required>
+                <input class="input_box" type="text" id="state" name="state" required>
             </div>
 
             <div class="form-group">
                 <label for="city">City:</label>
-                <input type="text" id="city" name="city" required>
+                <input class="input_box" type="text" id="city" name="city" required>
             </div>
 
 
             <div class="form-group">
                 <label for="address">House No.,Building Name :</label>
-                <input type="text" id="address" name="address" required>
+                <input class="input_box" type="text" id="address" name="address" required>
             </div>
 
             <div class="form-group">
                 <label for="address">Road name, Area, village:</label>
-                <input type="text" id="address" name="address" required>
+                <input class="input_box" type="text" id="address" name="address" required>
             </div>
-            <!-- <button type="submit">Submit</button> -->
-            <div class="x-box">
-                <button id="orderButton">Order</button>
-              </div>
-            
-              <div id="popup" class="popup">
-                <div class="popup-content">
-                  <div class="checkmark">
-                    <div class="check-circle"></div>
-                    <div class="check-stem"></div>
-                    <div class="check-kick"></div>
-                  </div>
-                  <h2 class="order-text">Order Completed!</h2>
-                </div>
-              </div>
-            
-              <script>
-  
-  document.getElementById('orderButton').addEventListener('click', () => {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'flex';
-    
-    setTimeout(() => {
-      popup.style.display = 'none';
-      window.location.href = 'home.html'; // Redirects to the homepage
-
-    }, 3000); // hides popup after 3 seconds
-  });
-  
-              </script>
+            <button type="submit" >Submit</button>
+            <!-- onclick="window.location.href='confirm.html'" -->
+           
         </form>
     </div>
 </body>

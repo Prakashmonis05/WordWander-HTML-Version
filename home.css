@@ -57,7 +57,7 @@ li a{
     margin-right: 25px;
 }
 
-button{
+.logout{
     background-color: #333;
     margin-left: 10px;
     border-radius: 10px;
@@ -65,7 +65,7 @@ button{
     width: 90px;
 }
 
-button a{
+.logout a{
     color:white;
     font-weight: bold;
 }
@@ -84,14 +84,14 @@ button a{
 
 
 .students-grid {
-    display: grid;
+    display: flex;
     gap: 20px;
-    width: 80%;
+    width: 77%;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden; 
     margin: 10px;
-    display: flex;
+    /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     
@@ -105,7 +105,7 @@ button a{
 .content{
     /* position: relative; */
     width: 200px;
-    height: 300px;
+    height: 310px;
     margin-bottom:15px;
     margin-left: 15px;
     margin-right: 15px;
@@ -133,9 +133,11 @@ button a{
 img{
     width: 150px;
     height: 150px;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
+    /* margin: 5px; */
+    margin-bottom: 0;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* display: block; */
 
 }
  
@@ -147,10 +149,17 @@ h2 {
     /* padding-right: 10px; */
     /* margin: 10px; */
     margin-bottom: 0;
-    white-space: pre-line;
+    /* white-space: pre-line; */
     /* margin: 0; */
     /* word-wrap: break-word; */
     /* width: 80%;  */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ... at the end if text is too long */
+    white-space: normal;
+    line-height: 1.4em; /* Adjust for desired spacing */
 
 }
 
@@ -159,6 +168,12 @@ h2 {
     font-size: 12px;
     margin-top: 0;
     margin-bottom: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+
 }
 
 .rating {
