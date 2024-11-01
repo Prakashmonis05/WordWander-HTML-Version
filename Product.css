@@ -60,25 +60,25 @@ body {
 .book-specs {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     font-size: 12px;
     font-weight: bold;
-    
+
 }
 
 .book-specs div {
     margin-bottom: 5px;
     border: .5px solid aqua;
     /* border-color: solid aqua; */
-    background-color:aliceblue;
+    background-color: aliceblue;
     /* border-width: 10px; */
     border-radius: 8px;
     width: 150px;
     height: 100px;
 
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 
 }
@@ -167,10 +167,11 @@ body {
 
 .offer-container {
     font-family: Arial, sans-serif;
-  
+
     padding: 20px;
     width: 200px;
 }
+
 .festival-banner {
     background-color: #d32f2f;
     color: white;
@@ -179,23 +180,28 @@ body {
     text-align: center;
     margin-bottom: 10px;
 }
+
 .discount {
     color: #d32f2f;
     font-size: 32px;
     font-weight: bold;
     margin: 0;
 }
+
 .price {
     font-size: 32px;
     font-weight: bold;
     color: #333;
     /* margin: 0; */
 }
-.discount, .price {
+
+.discount,
+.price {
     display: inline-block;
     margin: 0 10PX;
 
 }
+
 .mrp {
     font-size: 14px;
     color: #666;

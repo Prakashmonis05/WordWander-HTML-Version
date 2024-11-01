@@ -11,11 +11,9 @@ function login() {
     const inputPassword = document.getElementById("password").value;
 
     // Check if the entered username and password match the credentials
-    if (inputUsername === credentials.username && inputPassword === credentials.password) 
-    {
-        window.location.href="home.html";
-    } else 
-    {
+    if (inputUsername === credentials.username && inputPassword === credentials.password) {
+        window.location.href = "home.html";
+    } else {
         alert("Incorrect username or password!");
     }
 }
